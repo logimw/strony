@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "utils/mixins";
+@import "layout/typography";
+@import "layout/hero";
+@import "layout/footer";
+@import "components/form";
+@import "components/photos";
+@import "components/heading";
+@import "components/thumbnail";

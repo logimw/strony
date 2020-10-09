@@ -1,0 +1,28 @@
+// html {
+//   font-size: 62.5%;
+// }
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+html {
+  font-family: "Lato", sans-serif;
+  color: #222;
+}
+@mixin gridRWD {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+
+.content {
+  min-height: 70vh;
+}

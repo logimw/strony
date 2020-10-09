@@ -1,0 +1,76 @@
+.contact {
+  padding: 4rem 0;
+}
+.contact-center {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--primaryColor);
+}
+
+.contact-element {
+  flex: 0 45%;
+}
+.contact-img {
+  width: 500px;
+}
+.contact-text {
+  height: 100%;
+}
+
+.contact-element li {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.contact-element:first-child {
+  margin-left: 2.5rem;
+}
+.contact-element:last-child {
+  margin-right: 2.5rem;
+  margin-top: 10rem;
+}
+
+.contact-element li span {
+  font-size: 1.7rem;
+  display: block;
+}
+.text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1380px) {
+  .contact {
+    padding: 2rem 0 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 0 1rem 2.5rem;
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+  .contact-element:first-child {
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+  .contact-element:last-child {
+    margin: 0 auto;
+    max-width: 42rem;
+  }
+}

@@ -1,0 +1,40 @@
+@mixin underscore($postionX, $width, $bGcolor: $secondary) {
+  content: "";
+  position: absolute;
+  right: $postionX;
+  bottom: 0;
+  background: $bGcolor;
+  height: 28px;
+  width: $width;
+  z-index: -1;
+}
+
+@mixin bgSplash($positionX, $positionY) {
+  z-index: -1;
+  position: absolute;
+  right: $positionX;
+  top: $positionY;
+}
+
+@mixin desktop-sm {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin mobile-sm {
+  @media (max-width: 290px) {
+    @content;
+  }
+}

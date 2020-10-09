@@ -1,0 +1,78 @@
+.newsletter {
+  margin: 5rem 0;
+  padding: 5rem 0;
+  //   background: url(https://images.unsplash.com/photo-1554894872-4e447dadac68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+  //     no-repeat center center;
+  //   background-size: cover;
+  position: relative;
+  z-index: 2;
+  min-height: 25vh;
+}
+.newsletter:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(-30deg, $gray 0%, $white 100%);
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.newsletter .section-title p {
+  color: $black;
+  font-size: 1.5rem;
+}
+.newsletter .newsletter-form {
+  //   background: -webkit-linear-gradient(-30deg, $gray 0%, $white 100%);
+  position: relative;
+  height: 60px;
+  z-index: 2;
+}
+.newsletter .newsletter-form:after {
+  position: absolute;
+  content: "";
+  left: -2px;
+  right: -2px;
+  top: -2px;
+  bottom: -2px;
+  //   background: -webkit-linear-gradient(-30deg, $gray 0%, $white 100%);
+  z-index: -1;
+}
+.newsletter-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 30px;
+  background: $white;
+  color: $black;
+  padding-right: 200px;
+  font-size: 1.5rem;
+}
+
+.newsletter .newsletter-form input::placeholder {
+  color: $black;
+  opacity: 0.6;
+}
+.newsletter .newsletter-form button {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  width: 170px;
+  background: $black;
+  font-size: 1.7rem;
+  font-family: "Dindo";
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  color: $white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms ease;
+
+  &:hover {
+    background-color: darken($black, 100%);
+  }
+}

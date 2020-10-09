@@ -1,0 +1,106 @@
+.inspiration {
+  background: linear-gradient(
+      78deg,
+      rgba(96, 96, 96, 0.04) 0%,
+      rgba(96, 96, 96, 0.04) 35%,
+      rgba(220, 220, 220, 0.04) 35%,
+      rgba(220, 220, 220, 0.04) 100%
+    ),
+    linear-gradient(
+      150deg,
+      rgba(83, 83, 83, 0.04) 0%,
+      rgba(83, 83, 83, 0.04) 71%,
+      rgba(6, 6, 6, 0.04) 71%,
+      rgba(6, 6, 6, 0.04) 100%
+    ),
+    linear-gradient(
+      311deg,
+      rgba(203, 203, 203, 0.04) 0%,
+      rgba(203, 203, 203, 0.04) 58%,
+      rgba(3, 3, 3, 0.04) 58%,
+      rgba(3, 3, 3, 0.04) 100%
+    ),
+    linear-gradient(
+      137deg,
+      rgba(110, 110, 110, 0.04) 0%,
+      rgba(110, 110, 110, 0.04) 11%,
+      rgba(226, 226, 226, 0.04) 11%,
+      rgba(226, 226, 226, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgba($light-pink, 1), rgba($lighter-pink, 1));
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @include land-tablet {
+      flex-direction: column;
+    }
+  }
+  &__inner {
+    width: 100%;
+    padding: 10rem 0;
+    @include mobile {
+      padding: 5rem 0;
+    }
+  }
+  &__title {
+    margin: 5rem 0;
+  }
+  &__text {
+    margin-bottom: 5rem;
+    p {
+      text-align: center;
+      font-size: 1.9rem;
+      line-height: 2.5rem;
+      font-weight: 500;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    @include desktop {
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    h5 {
+      text-align: center;
+      font-size: 2.2rem;
+      max-width: 40rem;
+    }
+  }
+
+  &__you-tube {
+    margin-top: 2.5rem;
+    margin-bottom: 7.5rem;
+    iframe {
+      @include small-vid;
+
+      @include big-desktop {
+        @include xs-vid;
+      }
+
+      @include desktop {
+        @include medium-vid;
+      }
+      @include small-desktop {
+        @include small-vid;
+      }
+      @include land-tablet {
+        @include big-vid;
+      }
+      @include mobile {
+        @include small-vid;
+      }
+      @include mobile-vertical {
+        @include xs-vid;
+      }
+    }
+  }
+}

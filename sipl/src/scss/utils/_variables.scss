@@ -1,0 +1,20 @@
+$black: #222;
+$black-dark: #000;
+$gray-dark: #565656;
+$gray: #9c9c9c;
+$gray-light: #f5f5f9;
+$white: #fff;
+
+$pink: #ffb2bf;
+$primary: #76cdd4;
+$secondary: #9e99bf;
+// Animations
+
+.motion-left {
+  transform: translateX(200%);
+  //   transition: all 0.5s ease-in;
+}
+.motion-right {
+  transform: translateX(-200%);
+  //   transition: all 0.5s ease-in;
+}

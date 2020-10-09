@@ -1,0 +1,64 @@
+.faq {
+  background-color: $gray-light;
+  position: relative;
+  z-index: 2;
+  .row {
+    padding-top: 5.5rem;
+  }
+  .lamp-table {
+    margin: 1rem auto 2rem;
+    
+    thead, .data-power {
+      background-color: darken($gray-light ,15%);
+      word-wrap: break-word;
+    }
+    thead, td, th {
+      border: 1px solid $gray;
+      text-align: center;
+      min-width: 2.5rem;
+      padding: 1rem;
+      @include mobile {
+        min-width: .5rem;
+        padding: .1rem;
+      }
+    }
+  }
+}
+.slide {
+  background: #f5f5f9;
+  position: relative;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+
+  @include desktop-sm {
+    height: 300px;
+  }
+  @include mobile {
+    height: 150px;
+  }
+
+  .box {
+    position: fixed;
+    bottom: 0;
+    padding-top: 0px;
+    height: 520px;
+    z-index: 1;
+    @include desktop-sm {
+      height: 425px;
+    }    
+    @include mobile {
+      height: 320px;
+    }
+
+    img {
+      height: 400px;
+      @include desktop-sm {
+        height: 300px;
+      }
+      @include mobile {
+        height: 180px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "hand",
+    "title": "Układ dłoni",
+    "description": "To najbardziej popularny układ – tutaj ważne jest to, aby dłoń była rozluźniona, może coś trzymać, żeby było naturalniej.",
+    "images": ["dlon1.png", "dlon2.png", "dlon3.png"],
+    "secondDescription": "Jeśli istnieje taka możliwość, to poproś kogoś by zrobił Tobie kilka ująć pozując tak jak poniżej.",
+    "secondImages": ["dlon4.png", "dlon5.png", "dlon6.png"],
+    "thirdDescription": "Można też zrobić zdjęcie samego kciuka lub całej dłoni z wyprostowanymi / lekko ugiętymi palcami.",
+    "thirdImages": ["dlon7.png", "dlon8.png", "dlon9.png"]
+  },
+  {
+    "slug": "light",
+    "title": "Światło",
+    "description": "Dzienne, w ostrym słońcu na zewnątrz – tutaj bardzo ważne jest zadbać o to, by cienie nie przykryły stylizacji.",
+    "images": ["swiatlo1.png", "swiatlo2.png", "swiatlo3.png"],
+    "secondDescription": "Dzienne – połączenie ostrego słońca z cieniami w pomieszczeniu lub na zewnątrz, najlepiej na gładkim tle (np. ściana).",
+    "secondImages": ["swiatlo4.png", "swiatlo5.png", "swiatlo6.png"]
+  },
+  {
+    "title": "Video",
+    "description": "Przy okazji robienia zdjęć możesz nagrać krótkie video (na IG Stories / do galerii na Instagramie).",
+    "images": ["video1.png", "video2.png"]
+  },
+  {
+    "title": "Akcesoria",
+    "slug": "space-socks",
+    "description": "Nie kierujemy się przy naszych sesjach rekwizytami, które są modne – przede wszystkim liczy się naturalne ich zastosowanie, odpowiedni dobór kolorystyczny i przede wszystkim aby pasował do moodu zdjęcia – np. na plaży idealnie pasuje koszyk wiklinowy, koc boho, okulary przeciwczsłoneczne, świeże owoce, kapelusz.",
+    "images": [
+      "akcesoria1.png",
+      "akcesoria2.png",
+      "akcesoria3.png",
+      "akcesoria4.png",
+      "akcesoria5.png",
+      "akcesoria6.png"
+    ]
+  }
+]

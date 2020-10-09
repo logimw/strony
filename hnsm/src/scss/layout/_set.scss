@@ -1,0 +1,244 @@
+.start-set {
+  position: relative;
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 10rem 0;
+    @include mobile {
+      padding: 5rem 0;
+    }
+  }
+  &__content {
+    margin: 5rem 0 5rem;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__photo {
+    overflow: hidden;
+    img {
+      max-width: 55rem;
+      transition: transform 0.2s ease;
+      margin-left: 2rem;
+      @include small-desktop {
+        max-width: 50rem;
+        margin-left: 0;
+      }
+      @include land-tablet {
+        max-width: 45rem;
+      }
+      @include mobile {
+        max-width: 95%;
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include small-desktop {
+      flex-direction: column-reverse;
+    }
+    .text {
+      margin-top: 5rem;
+      max-width: 55rem;
+
+      p {
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__cta-2 {
+    .cta-btn-2 {
+      display: flex;
+      margin: 4rem 0;
+      position: relative;
+      a:hover ~ .animated-triangle {
+        animation-play-state: running;
+        transition: 0.5s;
+      }
+      .animated-triangle {
+        border-left-color: orangered; //$white;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        height: 0;
+        margin-left: 2rem;
+        animation: moveRight 1s ease-in infinite;
+        animation-play-state: paused;
+        @include triangleSize(10px, 20px);
+        @include desktop {
+          display: none;
+        }
+
+        @include mobile-vertical {
+          @include xs-vid;
+          height: 0px;
+          width: 0px;
+        }
+      }
+      .left-triangle {
+        left: 47%;
+      }
+
+      .right-triangle {
+        right: 50%;
+      }
+
+      a {
+        font-family: "Big John", "Lato", sans-serif;
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        padding: 1.5rem 2rem;
+        color: $white;
+        background-color: $dark-pink;
+        transition: 0.5s;
+        letter-spacing: 4px;
+        overflow: hidden;
+        -webkit-box-reflect: below 1px linear-gardient(transparent, #0005);
+        font-weight: bold;
+        box-shadow: 1px 1px 3px #000;
+        clip-path: polygon(100% 0%, 97% 100%, 0% 100%, 2% 0%);
+        @include desktop {
+          padding: 1.5rem 2rem;
+        }
+        @include mobile-vertical {
+          padding: 1.3rem 1rem;
+        }
+
+        &:hover {
+          background-color: $pink;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+
+    a {
+      position: relative;
+      text-decoration: none;
+      font-size: 2rem;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 1.5rem 2rem;
+      margin: 4rem 0;
+      color: $pink;
+      background-color: $lighter-pink;
+      transition: 0.5s;
+      letter-spacing: 4px;
+      overflow: hidden;
+      -webkit-box-reflect: below 1px linear-gardient(transparent, #0005);
+      font-weight: bold;
+      box-shadow: 1px 1px 3px #000;
+
+      &:hover {
+        background-color: $pink;
+        color: $lighter-pink;
+        box-shadow: 0 0 5px $pink, 0 0 25px $pink, 0 0 50px $pink,
+          0 0 200px $pink;
+      }
+
+      span {
+        position: absolute;
+        display: block;
+        &:nth-child(1) {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, $pink);
+          animation: animate1 1s linear infinite;
+        }
+        &:nth-child(2) {
+          top: -100%;
+          right: 0;
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(180deg, transparent, $pink);
+          animation: animate2 1s linear infinite;
+          animation-delay: 0.25s;
+        }
+        &:nth-child(3) {
+          bottom: 0;
+          right: -100%;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(270deg, transparent, $pink);
+          animation: animate3 1s linear infinite;
+          animation-delay: 0.5s;
+        }
+        &:nth-child(4) {
+          bottom: -100%;
+          left: 0;
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(0deg, transparent, $pink);
+          animation: animate4 1s linear infinite;
+          animation-delay: 0.75s;
+        }
+      }
+    }
+
+    .cta-btn {
+      position: relative;
+      .border {
+        display: block;
+        position: absolute;
+        height: 7.5rem;
+        &:nth-child(1) {
+          top: 25px;
+          left: 150px;
+          width: 100%;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, $pink);
+        }
+        &:nth-child(2) {
+          right: -50px;
+          width: 1px;
+          height: 75%;
+          background: linear-gradient(0deg, transparent, $pink);
+        }
+        &:nth-child(3) {
+          bottom: 25px;
+          right: 50px;
+          width: 100%;
+          height: 1px;
+          background: linear-gradient(270deg, transparent, $pink);
+        }
+        &:nth-child(4) {
+          top: 50px;
+          left: -25px;
+          width: 1px;
+          height: 75%;
+          background: linear-gradient(180deg, transparent, $pink);
+        }
+      }
+    }
+  }
+}

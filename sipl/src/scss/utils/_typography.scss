@@ -1,0 +1,114 @@
+h1 {
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+.title {
+  margin: 0 auto;
+  h2 {
+    color: $black;
+    font-family: termina, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  .subtitle {
+    text-align: center;
+    line-height: 3.4rem;
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    margin-top: 2.5rem;
+    strong {
+      font-weight: 900;
+    }
+  }
+}
+
+.heading {
+  text-align: center;
+  // font-family: "Didot";
+
+  &--decorated {
+    position: relative;
+    word-wrap: anywhere;
+
+    img {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 95%;
+    }
+  }
+}
+
+.text-box {
+  font-size: 1.6rem;
+  transition: all 0.5s cubic-bezier(0.26, 0.88, 0.09, 0.95);
+  font-weight: 200;
+  // max-width: 40rem;
+  // height: 20rem;
+  p {
+    margin-bottom: 3rem;
+    line-height: 30px;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+.big-text {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0 auto;
+}
+
+.product-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  .product-link {
+    text-transform: uppercase;
+    background-color: $black;
+    padding: 10px 15px;
+    color: $white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: all 200ms ease;
+    &:hover {
+      background-color: darken($black, 100%);
+    }
+  }
+}
+
+.shop-link div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $black;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.shop-icon .icon{
+  height: 1.7rem;
+}
+
+.shop-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

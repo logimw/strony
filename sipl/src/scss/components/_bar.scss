@@ -1,0 +1,19 @@
+.bar {
+  display: flex;
+  align-items: center;
+
+  .row {
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  img {
+    height: 40rem;
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-family: "lato";
+  }
+}

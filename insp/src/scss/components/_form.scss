@@ -1,0 +1,41 @@
+.form {
+  &__group {
+    @apply w-full px-3 mb-6 mb-0;
+  }
+  &___label {
+    @apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2;
+    font-size: 8px;
+  }
+  &__input {
+    @apply appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight;
+    &:focus {
+      outline: none;
+      background-color: #fff;
+    }
+  }
+  &__btn {
+    @apply bg-pink-400 text-gray-900 font-semibold py-3 px-6 border border-gray-400 rounded shadow transition-colors duration-300;
+    margin-top: 2.5rem;
+    &:hover {
+      background-color: #fed7e2;
+    }
+    &:disabled {
+      opacity: 0.5;
+      &:hover {
+        cursor: not-allowed;
+        @apply bg-pink-400;
+      }
+    }
+  }
+  &__agree {
+    display: flex;
+    align-items: flex-start;
+    input {
+      margin: 4px 10px 0 0;
+      cursor: pointer;
+    }
+    p {
+      cursor: pointer;
+    }
+  }
+}

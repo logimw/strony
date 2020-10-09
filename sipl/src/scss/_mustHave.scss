@@ -1,0 +1,115 @@
+.must-have {
+  padding: 5rem 0 15rem;
+  position: relative;
+  z-index: 2;
+  background-color: $white;
+  
+  @include desktop-sm {
+    padding: 2.5rem 0 5rem;
+  }
+
+  .heading::after {
+    @include underscore(-10px, 50rem, $primary);
+  }
+
+  &__container {
+    position: relative;
+    max-width: 120rem;
+    margin: 6rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+    @include desktop-sm {
+      padding: 0 10rem;
+    }
+    @include mobile {
+      padding: 0;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 60rem;
+    
+      @include desktop-sm {
+        max-width: 35rem;
+      }
+      @include mobile {
+        max-width: auto;
+      }
+    img {
+      width: 100%;
+    }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 100ms ease-in;
+  }
+
+  &__link {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+    svg {
+      transform: scale(1.5);
+    }
+  }
+  a {
+    
+    &:hover {
+      text-decoration: none;
+
+    }
+    &:hover .must-have__name {
+      transform: scale(1.1);
+    }
+
+    transform: scale(1.1);
+  }
+  .title {
+    margin: 0 auto;
+    z-index: 1;
+    // width: 100%;
+    h2{
+      word-wrap: break-word;
+    }
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px 25px;
+    grid-template-areas: ". ." ". .";
+  }
+  .box {
+    max-height: 35rem;
+    margin-bottom: 7.5rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  .temporary {
+    background-color: $gray-light;
+  }
+
+  .splash--right {
+    @include bgSplash(-1030px, 160px);
+    @include desktop-sm {
+      top: 350px;
+    }
+  }
+
+  .splash--left {
+    @include bgSplash(780px, -300px);
+  }
+}

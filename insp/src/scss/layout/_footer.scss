@@ -1,0 +1,58 @@
+.footer {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #ddd;
+  @include mobile {
+    margin-top: 2.5rem;
+  }
+  h5 {
+    width: 60%;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+    @include mobile {
+      margin-bottom: 0.25rem;
+      margin-top: 0.75rem;
+    }
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33333%;
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &__social {
+    width: 100%;
+    max-width: 10rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__navigation {
+    width: 50%;
+    list-style: disclosure-closed;
+    font-family: 'Lato', sans-serif;
+    li a {
+      transition: all 200ms ease-out;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+  &__ico {
+    display: flex;
+    justify-content: center;
+    svg {
+      transition: all 300ms ease-out;
+      width: 3rem;
+      height: 3rem;
+    }
+    &:hover {
+      svg {
+        fill: #f687b3;
+      }
+    }
+  }
+}

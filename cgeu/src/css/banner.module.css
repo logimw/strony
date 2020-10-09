@@ -1,0 +1,60 @@
+.banner {
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+}
+.banner h1 {
+  font-size: 7.2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  letter-spacing: 6px;
+  font-weight: 300;
+}
+.banner p {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+.logo-container img {
+  max-width: 21rem;
+  width: 100%;
+}
+.logo-container div {
+  display: flex;
+  align-items: center;
+}
+.logo-container div:nth-child(2) {
+  margin-left: 5rem;
+}
+
+@media screen and (max-width: 1800px) {
+  .logo-container div:nth-child(2) {
+    margin-left: 0.5rem;
+  }
+  .logo-container img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .banner h1 {
+    font-size: 4rem;
+  }
+  .logo-container {
+    flex-direction: column;
+  }
+  .logo-container img {
+    max-width: 32rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .logo-container div:nth-child(2) {
+    margin-left: 0rem;
+    margin-top: 3rem;
+  }
+}

@@ -1,0 +1,58 @@
+.export {
+  padding: 6rem 0;
+  background-color: #706f6f;
+}
+.export-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.export-info {
+  max-width: 120rem;
+  margin: 5rem auto 8rem;
+  text-align: center;
+  color: var(--mainWhite);
+}
+
+.export-info p {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  text-transform: none;
+  max-width: 95rem;
+}
+.export-map {
+  position: relative;
+}
+.export-map img {
+  max-width: 100%;
+}
+.export-map:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 250px;
+  background-color: var(--mainWhite);
+  bottom: -25px;
+  opacity: 0.8;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 1400px) {
+  .export-map img {
+    width: 75%;
+  }
+  .export-map {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .export {
+    padding: 5rem 0;
+  }
+  .export-info {
+    width: 95%;
+    margin: 5rem auto;
+  }
+}

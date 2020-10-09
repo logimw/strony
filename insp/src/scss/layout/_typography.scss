@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Didot";
+    src: url("../fonts/DidotLTPro-Roman.ttf");
+  }
+  // @font-face {
+  //   font-family: "Open Sans";
+  //   src: url("https://use.typekit.net/ded4bqp.css") format("woff2"),
+  // }
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  @import url('https://use.typekit.net/ded4bqp.css');
+  @import url('https://use.typekit.net/ekl6lxk.css');
+
+  .shop-link {
+    color: #9F9F9F;
+    .border-link {
+      transition: all 300ms ease-in;
+      border: 2px #9F9F9F solid;
+      border-radius: 10px;
+      padding: 8px 18px 8px 5px;
+
+      @include mobile {
+        padding: 2px 5px 2px 2px;
+        font-size: 1rem;
+      }
+    }
+    span {
+      font-family: Aileron, serif;
+      text-transform: uppercase;
+      transition: all 300ms ease-in;
+    }
+    figure svg {
+      transition: all 300ms ease-in;
+    }
+    figure svg path {
+      stroke: #9F9F9F;
+      transition: all 300ms ease-in;
+    }
+    &:hover {
+      .border-link {
+        border: 2px #112 solid;
+      }
+      color: #112;
+      figure svg {
+        transform: translateX(15px) scale(1.1);
+      }
+      figure svg path {
+        stroke: #112;
+      }
+    }
+  }

@@ -1,0 +1,229 @@
+.step-by-step {
+  padding: 5rem 0;
+  position: relative;
+  z-index: 2;
+  background-color: $white;
+
+  .box-vid {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+  }
+  .heading::after {
+    @include underscore(485px, 20.5rem, $pink);
+  }
+
+  .tutorial {
+    &__container {
+      max-width: 140rem;
+      margin: 0 auto;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      .col-6 {
+        padding: 0;
+        @include tablet {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    &__box {
+      @include tablet {
+        min-height: 40rem;
+      }
+      
+    @include mobile {
+      min-height: 30rem;
+    }
+
+    @include mobile-sm {
+      min-height: 25rem;
+    }
+    }
+    &__text {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45rem;
+
+   @include tablet {
+        order: 2;
+      }
+
+      @include mobile {
+        height: 30rem;
+      }
+
+      @include mobile-sm {
+        height: 25rem;
+      }
+      
+
+      .behind-text {
+        position: absolute;
+        
+        p {
+          font-size: 80px;
+          font-family: termina, sans-serif;
+          color: rgba($white, $alpha: .2);
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+      }      
+      .behind-text-transparent {
+        position: absolute;
+        bottom: -30px;
+        p {
+          font-size: 80px;
+          color: rgba($secondary, 0);
+          font-family: termina, sans-serif;
+          text-transform: uppercase;
+          font-weight: 700;
+          // text-shadow: 1px 1px 1px rgba($white, $alpha: .2);
+          -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: rgba($white, $alpha: .2);
+        }
+      }
+    }
+
+    &__copy {
+      font-size: 4rem;
+      color: $white;
+      font-weight: 500;
+      line-height: unset;
+      position: relative;
+      max-width: 56rem;
+      &:last-child {
+        font-weight: 700;
+      }
+      @include tablet {
+        font-size: 2.2rem;
+      }
+      @include mobile {
+        padding: 0 1rem;
+        max-width: 80%;
+      }
+
+    }
+  }
+  div.row.justify-content-around {
+    background: $secondary;
+  }
+  .title {
+    margin: 0 auto;
+  }
+  .left {
+    text-align: right;
+  }
+  .right {
+    text-align: left;
+  }
+
+  #text1 .tutorial__copy {
+    &:first-child{
+      &::after{
+        content: "Aplikacja";
+        position: absolute;
+        left: -10px;
+        top: -15px;
+        font-size:8rem;
+        font-family: termina, sans-serif;
+        color: rgba($white, $alpha: .2);
+        text-transform: uppercase;
+        font-weight: 700;
+        @include tablet {
+          font-size: 5rem;
+        }
+        @include mobile {
+          top: -10px;
+          left: 5px;
+          font-size: 4.5rem;
+        }
+        @include mobile-sm {
+          font-size: 3.5rem;
+        }
+      }
+    }
+    &:last-child{
+      &::after {
+        content: "Aplikacja";
+        position: absolute;
+        left: -15px;
+        top: -25px;
+        font-size: 8rem;
+        color: rgba($secondary, 0);
+        font-family: termina, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgba($white, $alpha: .2);
+        @include tablet {
+          font-size: 5rem;
+        }
+        @include mobile {
+          top: -10px;
+          left: 10px;
+          font-size: 4.5rem;
+        }
+        @include mobile-sm {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }  
+  #text2 .tutorial__copy {
+    &:first-child{
+      &::after{
+        content: "Usuwanie";
+        position: absolute;
+        font-size:8rem;
+        font-family: termina, sans-serif;
+        color: rgba($white, $alpha: .2);
+        text-transform: uppercase;
+        font-weight: 700;
+        left: 0;
+        top: -10px;
+        @include tablet {
+          font-size: 5rem;
+        }
+        @include mobile {
+          top: -10px;
+          left: 5px;
+          font-size: 4.5rem;
+        }
+        @include mobile-sm {
+          font-size: 3.5rem;
+        }
+      }
+    }
+    &:last-child{
+      &::after {
+        content: "Usuwanie";
+        position: absolute;
+        left: 15px;
+        font-size: 8rem;
+        color: rgba($secondary, 0);
+        font-family: termina, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgba($white, $alpha: .2);
+        @include tablet {
+          font-size: 5rem;
+        }
+        @include mobile {
+          top: -10px;
+          left: 10px;
+          font-size: 4.5rem;
+        }
+        @include mobile-sm {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+}

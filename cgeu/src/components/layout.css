@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  --primaryColor: #ae935f;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #d3d3d3;
+  --darkerGrey: #a9a9a9;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 1.5px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  line-height: 1.4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  letter-spacing: var(--mainSpacing);
+}
+.defaultHero {
+  min-height: calc(100vh - 62px);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("../images/defaultBcg.jpeg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-white,
+.btn-primary {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.btn-white:hover {
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+}
+.btn-primary {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  border: 2px solid var(--primaryColor);
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+/* .gatsby-image-wrapper {
+  max-height: 600px;
+} */
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SLIDER STYELS */
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.buttonBack {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: orangered;
+}
+
+.buttonNext {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.dotGroup {
+  text-align: center;
+}
+
+.over-footer {
+  box-shadow: 0px 1px 1px 1px #707070;
+  z-index: 1;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+form {
+  position: relative;
+  max-width: 56rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: lato, sans-serif;
+}
+form input {
+  transition: all 0.3s ease;
+  position: relative;
+}
+form input:not([type="checkbox"]),
+form select {
+  margin-bottom: 2rem;
+  padding: 2rem 4rem;
+  letter-spacing: 2px;
+  border: 1px solid var(--primaryColor);
+  /* appearance: none;
+  outline: none;
+}
+select::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  background-color: orangered;
+  color: var(--primaryColor);
+  z-index: 100; */
+}
+form textarea {
+  width: 100%;
+  padding: 2rem 4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  border: 1px solid var(--primaryColor);
+  resize: vertical;
+}
+form input:focus {
+  box-shadow: 1px 1px 5px var(--primaryColor);
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 57.5%;
+  }
+}

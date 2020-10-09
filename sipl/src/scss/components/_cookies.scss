@@ -1,0 +1,54 @@
+.cookies_info {
+    display: none;
+    width: 100%;
+    padding: 2rem 0 1.75rem;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 1.6rem;
+    color: $white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    // -ms-animation: cookieShowUp 1s linear 1 1s forwards;
+    // -webkit-animation: cookieShowUp 1s linear 1 1s forwards;
+    animation: cookieShowUp 1s linear 1 1s forwards;
+    margin-bottom: -60px;
+    cursor: pointer;
+  
+    .close {
+      display: block;
+      color: #fff;
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center;
+      text-decoration: none;
+      background: $black-dark;
+      padding: 5px 8px;
+      border: none;
+      cursor: pointer;
+      font-size: inherit;
+      font-family: inherit;
+    }
+    .rodo-container {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .link {
+      color: $white;
+    }
+    .rodo-info {
+      max-width: 90%;
+    }
+  }
+  
+  @keyframes cookieShowUp {
+    100% {
+      margin-bottom: 0;
+    }
+  }

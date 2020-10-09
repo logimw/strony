@@ -1,0 +1,102 @@
+.simple {
+  padding: 10rem 0 5rem;
+  position: relative;
+  z-index: 2;
+  background-color: $white;
+
+  @include mobile {
+    padding: 2.5rem 0 1rem;
+  }
+  .heading::after {
+    @include underscore(120px, 20.5rem, $primary);
+  }
+
+  &__container {
+    max-width: 140rem;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    max-width: 70rem;
+    margin: 9rem 0;
+
+    @include desktop-sm{
+      margin: 2rem 0 0;
+    }
+
+    &:last-child {
+      flex: 0 0 45%;
+      @include tablet{
+        display: none;
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5rem;
+
+    @include mobile {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      text-align: center;
+      margin-top: 5rem;
+      width: 15rem;
+      height: 19rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      @include mobile-sm {
+        width: 13rem;
+      }
+      img {
+        max-width: 10rem;
+        // max-height: 9.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &__small {
+    height: 25rem;
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.cta {
+  margin: 4rem auto;
+  z-index: 1;
+}
+.cta-button {
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1rem 4.8rem;
+  font-weight: 700;
+  background-color: $secondary;
+  color: $white;
+  transition: 300ms;
+  border-radius: 10px;
+  
+  &:hover {
+    color: $white;
+    background-color: rgba($secondary, 0.75);
+    text-decoration: none;
+  }
+}

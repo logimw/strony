@@ -1,0 +1,10 @@
+.inspire-photo {
+    width: 30%;
+    min-height: 18rem;
+    min-width: 16rem;
+    margin: 1rem;
+    @include mobile {
+        min-width: 14rem;
+        min-height: 16rem;
+    }
+}

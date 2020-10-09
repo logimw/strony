@@ -1,0 +1,56 @@
+.summary {
+  position: relative;
+  height: 40rem;
+  // background: linear-gradient(
+  //     78deg,
+  //     rgba(96, 96, 96, 0.04) 0%,
+  //     rgba(96, 96, 96, 0.04) 35%,
+  //     rgba(220, 220, 220, 0.04) 35%,
+  //     rgba(220, 220, 220, 0.04) 100%
+  //   ),
+  //   linear-gradient(
+  //     150deg,
+  //     rgba(83, 83, 83, 0.04) 0%,
+  //     rgba(83, 83, 83, 0.04) 71%,
+  //     rgba(6, 6, 6, 0.04) 71%,
+  //     rgba(6, 6, 6, 0.04) 100%
+  //   ),
+  //   linear-gradient(
+  //     311deg,
+  //     rgba(203, 203, 203, 0.04) 0%,
+  //     rgba(203, 203, 203, 0.04) 58%,
+  //     rgba(3, 3, 3, 0.04) 58%,
+  //     rgba(3, 3, 3, 0.04) 100%
+  //   ),
+  //   linear-gradient(
+  //     137deg,
+  //     rgba(110, 110, 110, 0.04) 0%,
+  //     rgba(110, 110, 110, 0.04) 11%,
+  //     rgba(226, 226, 226, 0.04) 11%,
+  //     rgba(226, 226, 226, 0.04) 100%
+  //   ),
+  //   linear-gradient(90deg, rgba($light-pink, 1), rgba($lighter-pink, 1));
+  &__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    // @media screen {
+
+    // }
+  }
+
+  &__content {
+    margin: 10rem 0 5rem;
+    h2 {
+      font-size: 4.5rem;
+      text-align: center;
+    }
+  }
+  &__container {
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

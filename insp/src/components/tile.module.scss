@@ -1,0 +1,90 @@
+@mixin tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+
+.tile-pink {
+  background-color: #ffaab7;
+}
+.tile {
+  overflow: hidden;
+  min-width: 27.5rem;
+  box-shadow: 1px 3px 5px #111;
+  transition: box-shadow 300ms ease;
+  font-family: "aileron";
+  margin-bottom: 20px;
+  @include mobile {
+    min-width: auto;
+    width: 17rem;
+  }
+  &:hover {
+    box-shadow: 3px 7px 15px #222;
+  }
+
+  &__box {
+    transition: all 300ms ease;
+    &:hover {
+      scale: 1.2;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+    position: relative;
+    @include mobile {
+      min-height: auto;
+      height: 13rem;
+    }
+
+    &--prmiary {
+      background-color: rgb(243, 221, 24);
+    }
+
+    &--secondary {
+      background-color: #ffaab7;
+    }
+  }
+  &__content-box {
+    position: absolute;
+    padding: 3rem;
+    border: 1px solid #222;
+    width: 80%;
+    @include mobile {
+      padding: 1rem;
+    }
+  }
+
+  &__ico {
+    display: flex;
+    justify-content: center;
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      display: block;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+}
